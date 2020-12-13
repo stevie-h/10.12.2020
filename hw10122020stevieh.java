@@ -24,12 +24,60 @@ public class Main
 {
     public static void main(String[] args)
     {
-    
-    
-    
-    
-    
-    
-    
+
+    // ex1
+        System.out.println("Please enter two integers: ");
+        int a = prn.nextInt();
+        int b = prn.nextInt();
+        if (a > b)
+        {
+            System.out.println(String.format("%d > %d", a, b));
+        }
+        else if (a < b)
+        {
+            System.out.println(String.format("%d < %d", a, b));
+        }
+        else
+            System.out.println(String.format("%d = %d", a, b));
+
+    // ex2
+        int c = 5;
+        while (c <= 10)
+        {
+            System.out.println("The current number is " + c);
+            c++;
+        }
+
+    // ex3
+        System.out.println("Please enter an integer: ");
+        int num = prn.nextInt();
+        while (num <= 100)
+        {
+            System.out.println("Please enter another number: ");
+            num = prn.nextInt();
+        }
+        System.out.println(String.format("The last number you entered, %d, is larger than 100", num));
+
+    // ex4 (etgar)
+        int evennum = 2;
+        while (evennum < 100)
+        {
+            evennum += 2;
+            System.out.println(evennum);
+        }
+        System.out.println("That was all even numbers between 4 and 100.");
+
+    // ex 5 (etgar)
+        System.out.println("Please enter two integers:  ");
+        int com1 = prn.nextInt();
+        int com2 = prn.nextInt();
+        while (com1 != com2)
+        {
+            System.out.println("Please enter two more numbers: ");
+            com1 = prn.nextInt();
+            com2 = prn.nextInt();
+        }
+        System.out.println(String.format("The last two numbers, %d and %d, are equal.", com1, com2)); 
+        
     }
 }
